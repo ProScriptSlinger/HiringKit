@@ -5,7 +5,7 @@ export interface TxtBtnProp {
   path: string;
 }
 
-export default (props: TxtBtnProp) => {
+const TxtBtn = (props: TxtBtnProp) => {
   const { label, path } = props;
   return (
     <Link href={`/${path}`} passHref legacyBehavior>
@@ -15,3 +15,4 @@ export default (props: TxtBtnProp) => {
     </Link>
   );
 };
+export default TxtBtn;

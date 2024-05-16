@@ -1,4 +1,4 @@
-export default () => {
+const Comma = () => {
   return (
     <div className="text-[#2174EA] my-4 ">
       <svg width="20" height="16" viewBox="0 0 20 16" fill="currentColor">
@@ -7,3 +7,4 @@ export default () => {
     </div>
   );
 };
+export default Comma;

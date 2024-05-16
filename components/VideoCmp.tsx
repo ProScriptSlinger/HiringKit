@@ -11,7 +11,7 @@ export interface VideoProp {
   left?: boolean;
 }
 
-export default (props: VideoProp) => {
+const VideoCmp = (props: VideoProp) => {
   const [modalVisible, setModalVisible] = useState<Boolean>(false);
   const { imgSrc, videoSrc, left } = props;
 
@@ -59,3 +59,5 @@ export default (props: VideoProp) => {
     </>
   );
 };
+
+export default VideoCmp;

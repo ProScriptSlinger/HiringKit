@@ -1,4 +1,4 @@
-export default () => {
+const NumThree = () => {
   return (
     <div
       className="flex justify-center items-center w-20 h-20 bg-[#4B8FFB]"
@@ -10,3 +10,4 @@ export default () => {
     </div>
   );
 };
+export default NumThree;

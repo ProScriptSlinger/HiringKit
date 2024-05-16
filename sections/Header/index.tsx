@@ -3,8 +3,13 @@ import menu from "./menu";
 import { TxtBtnProp } from "@/components/TxtBtn";
 import TxtBtn from "@/components/TxtBtn";
 import { useEffect, useState } from "react";
+import { useScreenSize } from "@/utils/customHooks";
+
 export default () => {
   const [isSticky, setSticky] = useState<boolean>(false);
+
+  // Usage in a component
+  const screenSize = useScreenSize();
 
   useEffect(() => {
     const handleScroll = () => {

@@ -13,11 +13,11 @@ export default () => {
       <div className="flex flex-col items-center gap-4 pt-16 px-4 relative">
         <div className="banner-polygon h-[480px] md:h-[672px]  absolute top-0 z-10" />
         <div className="z-20  text-white">
-          <div className="text-[30px] md:text-[40px] lg:text-[64px] font-bold text-center">
+          <div className="text-[30px] md:text-[40px] lg:text-[55px] font-bold text-center">
             Screen Fast, Hire Top 1% Talent with <br />
             AI-Powered Video Interviews
           </div>
-          <p className="text-center text-[17px] font-semibold">
+          <p className="text-center text-[17px] opacity-80">
             Discover the future of recruitment with HiringKit. Our AI-integrated
             platform generates interview questions,
             <br /> assesses candidates, and provides detailed evaluations,

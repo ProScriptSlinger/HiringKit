@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ElevateItem from "./ElevateItem";
-import { data } from "./data.ts";
+import { data } from "./data";
 
 export default () => {
   return (

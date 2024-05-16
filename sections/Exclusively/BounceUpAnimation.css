@@ -1,0 +1,23 @@
+@keyframes bounceUp {
+    0% {
+        transform: translateX(60px);
+    }
+    50% {
+        transform: translateX(-60px); /* Adjust the bounce height as needed */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-out; /* Smooth transition for bounce effect */
+}
+
+.bounce-up {
+    animation: bounceUp 0.3s ease-in-out;
+}

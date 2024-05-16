@@ -1,0 +1,25 @@
+
+.how-item-container {
+    position: relative;
+    height: 'fit-content';
+}
+
+.item-border {
+    transform: translate(20px, -20px);
+}
+
+.item-img {
+    width: 341px;
+    height: 341px;
+    transition: transform 0.4s ease;
+}
+
+.how-item-container:hover .item-border {
+    transform: translate(0, 0);
+    transition-duration: 0.3s; /* Duration of the transition */
+    transition-timing-function: ease; /* Timing function for smooth transition */
+}
+
+.how-item-container:hover img {
+    transform: scale(1.05); /* Enlarge the image by 20% on hover */
+}

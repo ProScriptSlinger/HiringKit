@@ -1,4 +1,4 @@
-export default () => {
+const Leave = () => {
   return (
     <div className="text-[#CBD5E1]">
       <svg width="56" height="43">
@@ -10,3 +10,5 @@ export default () => {
     </div>
   );
 };
+
+export default Leave;

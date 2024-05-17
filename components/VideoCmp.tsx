@@ -32,9 +32,9 @@ const VideoCmp = (props: VideoProp) => {
             alt={imgSrc}
           />
         </div>
-        <div className="absolute">
+        {/* <div className="absolute">
           <PlayBtn onClick={() => setModalVisible(true)} />
-        </div>
+        </div> */}
       </div>
       <Modal props={{ visible: modalVisible, setVisible: setModalVisible }}>
         <div className="max-w-[1124px] w-[80vw]">

@@ -9,7 +9,7 @@ export default () => {
       <div className="border-b-2 border-[#F1F5F9] w-[60vw] mt-[40px]" />
       <ScrollAnimation
         animateOnlyOnScrollDown={false}
-        initiallyVisible={true}
+        initiallyVisible={false}
         animateOnce={true}
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"
@@ -23,7 +23,7 @@ export default () => {
       </ScrollAnimation>
       <ScrollAnimation
         animateOnlyOnScrollDown={false}
-        initiallyVisible={true}
+        initiallyVisible={false}
         animateOnce={true}
         animateIn="animate__fadeIn"
         animateOut="animate__fadeOut"

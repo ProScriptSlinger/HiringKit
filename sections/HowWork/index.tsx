@@ -17,7 +17,7 @@ export default () => {
             {data.map((item, index) => (
               <ScrollAnimation
                 animateOnlyOnScrollDown={false}
-                initiallyVisible={true}
+                initiallyVisible={false}
                 animateOnce={true}
                 animateIn={
                   index % 2 == 0 ? "animate__fadeInUp" : "animate__fadeIn"

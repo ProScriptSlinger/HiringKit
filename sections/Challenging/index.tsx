@@ -89,7 +89,7 @@ export default () => {
         </div>
         <ScrollAnimation
           animateOnlyOnScrollDown={false}
-          initiallyVisible={true}
+          initiallyVisible={false}
           animateOnce={true}
           animateIn={"animate__fadeInUp"}
           animateOut="animate__fadeOut"

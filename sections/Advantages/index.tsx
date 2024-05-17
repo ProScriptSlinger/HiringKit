@@ -11,7 +11,7 @@ export default () => {
       {content.map((item, index) => (
         <ScrollAnimation
           animateOnlyOnScrollDown={false}
-          initiallyVisible={true}
+          initiallyVisible={false}
           animateOnce={true}
           animateIn={
             index % 2 == 0 ? "animate__fadeInLeft" : "animate__fadeInRight"

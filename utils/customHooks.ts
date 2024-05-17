@@ -40,3 +40,27 @@ export const useScreenSize = () => {
 
     return screenSize;
 };
+
+export const useTypewriter = (text: string, speed: number = 50): string => {
+    const [displayText, setDisplayText] = useState<string>('');
+
+    useEffect(() => {
+        let i = -1;
+        const typingInterval = setInterval(() => {
+            if (i < text.length) {
+                i++;
+                setDisplayText(prevText => prevText + text.charAt(i));
+            } else {
+                setDisplayText('');
+                i = -1;
+            }
+        }, speed);
+
+        return () => {
+            clearInterval(typingInterval);
+        };
+    }, [text, speed]);
+
+    return displayText;
+};
+

@@ -4,7 +4,7 @@ import { VideoProp } from "@/components/VideoCmp";
 import { TextPartProp } from "./TextPart";
 
 export interface TestinominalProp {
-  textProp: TextPartProp;
+  textProp: TextPartProp[];
   videoProp: VideoProp;
 }
 
@@ -17,7 +17,7 @@ export default (props: TestinominalProp) => {
       }`}
     >
       <VideoCmp {...videoProp} />
-      <TextPart {...textProp} />
+      <TextPart textProp={textProp} />
     </div>
   );
 };

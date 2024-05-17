@@ -4,6 +4,7 @@ import { TxtBtnProp } from "@/components/TxtBtn";
 import TxtBtn from "@/components/TxtBtn";
 import { useEffect, useState } from "react";
 import { useScreenSize } from "@/utils/customHooks";
+import Logo from "@/components/icons/Logo";
 
 export default () => {
   const [isSticky, setSticky] = useState<boolean>(false);
@@ -13,7 +14,7 @@ export default () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setSticky(true);
       } else {
         setSticky(false);
@@ -27,14 +28,15 @@ export default () => {
   }, []);
   return (
     <div
-      className="py-4 bg-[#101D2D] flex justify-around z-50"
+      className="py-4 bg-[#101D2D] flex items-center justify-around z-50 transition-all"
       style={{
         position: isSticky ? "fixed" : "static",
         top: 0,
         width: "100%",
       }}
     >
-      <div className="flex">
+      <div className="flex items-center">
+        <Logo />
         {menu.map((item, index) => (
           <TxtBtn key={index} {...item} />
         ))}

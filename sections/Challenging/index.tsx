@@ -3,6 +3,7 @@ import { useState } from "react";
 import IconBtn from "./IconBtn";
 import { useEffect } from "react";
 import "./BounceUpAnimation.css";
+import ScrollAnimation from "react-scroll-animation-wrapper";
 const data = [
   {
     label: "Overflow of Unqualified Applicants",
@@ -86,15 +87,26 @@ export default () => {
             />
           ))}
         </div>
-        <div className={`max-w-[768px] mt-8 shadow-lg`}>
-          <img
-            src={data[activeId].imgSrc}
-            width="100%"
-            alt={data[activeId].label}
-          />
-        </div>
+        <ScrollAnimation
+          animateOnlyOnScrollDown={false}
+          initiallyVisible={false}
+          animateOnce={true}
+          animateIn={"animate__fadeInUp"}
+          animateOut="animate__fadeOut"
+          offset={-100}
+          delay={200}
+          duration={0.4}
+        >
+          <div className={`max-w-[768px] mt-8 shadow-lg`}>
+            <img
+              src={data[activeId].imgSrc}
+              width="100%"
+              alt={data[activeId].label}
+            />
+          </div>
+        </ScrollAnimation>
       </div>
-      <div className="border-b-2 border-[#F1F5F9] w-[60vw] mt-[260px]" />
+      <div className=" mt-[260px]" />
     </div>
   );
 };

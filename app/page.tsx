@@ -1,14 +1,17 @@
 import Header from "@/sections/Header";
 import Banner from "@/sections/Banner";
 import Icons from "@/sections/Icons";
-import Testinominals from "@/sections/Testinominals";
-import Exclusively from "@/sections/Exclusively";
+import Advantages from "@/sections/Advantages";
+import Challenging from "@/sections/Challenging";
 import WhyUse from "@/sections/WhyUse";
-import HowUse from "@/sections/HowUse";
-import Payment from "@/sections/Payment";
-import Elevate from "@/sections/Elevate";
+import HowWork from "@/sections/HowWork";
+import Payment from "@/sections/Pricing";
+// import Elevate from "@/sections/Elevate";
 import GoodBye from "@/sections/GoodBye";
 import Footer from "@/sections/Footer";
+import TopUpBtn from "@/components/TopUp";
+import Testinominals from "@/sections/Testinominals";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-[100vw] overflow-x-hidden">
@@ -16,12 +19,14 @@ export default function Home() {
       <Banner />
       <Icons />
       <WhyUse />
-      <Exclusively />
+      <Challenging />
       <Testinominals />
-      <HowUse />
-      <Elevate />
+      <HowWork />
+      <Advantages />
+      {/* <Elevate /> */}
       <GoodBye />
       <Footer />
+      <TopUpBtn />
       {/* <Payment /> */}
     </main>
   );

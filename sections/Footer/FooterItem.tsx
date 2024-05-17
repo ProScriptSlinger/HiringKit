@@ -4,7 +4,7 @@ interface FooterItemProps {
 }
 
 export const Item = ({ label }: { label: string }) => (
-  <div className="text-[#64748B] text-[14px] hover:text-[#2174EA] cursor-pointer">
+  <div className="text-[#94A3B8] text-[14px] hover:text-[#2174EA] cursor-pointer">
     {label}
   </div>
 );

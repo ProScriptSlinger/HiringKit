@@ -4,17 +4,17 @@ const menu = [
         path: '/pricing',
     },
     {
-        label: 'About',
-        path: '/about',
+        label: 'Integrations',
+        path: '/integratinos',
+    },
+    {
+        label: 'Book a demo',
+        path: '/boook-demo',
     },
     {
         label: 'Blog',
         path: '/blog',
     },
-    {
-        label: 'Wall of Love',
-        path: '/wall-love',
-    }
 ];
 
 export default menu;

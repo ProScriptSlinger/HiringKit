@@ -18,7 +18,7 @@ export default () => {
   return (
     <>
       <div className="flex flex-col items-center gap-4 pt-16 px-4 relative">
-        <div className="banner-polygon h-[480px] md:h-[672px]  absolute top-0 z-10" />
+        <div className="banner-polygon h-[480px] md:h-[680px]  absolute -top-1 z-10" />
         <div className="z-20  text-white">
           <div className="min-h-[170px] text-[30px] md:text-[40px] lg:text-[55px] font-bold text-center">
             Screen Fast, Hire Top 1% Talent with <br />
@@ -37,7 +37,7 @@ export default () => {
               <PlayBtn onClick={() => setModalVisible(true)} />
             </div>
             <Image
-              src={"/images/wof-hero.jpg"}
+              src={"/images/banner-bg.jpg"}
               width={768}
               height={432}
               alt="banner-image"

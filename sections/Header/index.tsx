@@ -38,7 +38,7 @@ export default () => {
     >
       {screenSize == "sm" || !screenSize ? (
         <div className="flex items-center justify-between w-full px-4 md:px-8">
-          <div className="flex flex-col items-center text-white mr-4">
+          <div className="flex flex-col items-center text-[#2071E5] mr-4">
             <Logo />
             <div className="font-bold text-[14px]">HiringKit</div>
           </div>
@@ -57,7 +57,7 @@ export default () => {
       ) : (
         <>
           <div className="flex items-center">
-            <div className="flex flex-col items-center text-white mr-4">
+            <div className="flex flex-col items-center text-[#2071E5] mr-4">
               <Logo />
               <div className="font-bold text-[14px]">HiringKit</div>
             </div>

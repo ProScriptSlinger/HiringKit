@@ -2,7 +2,7 @@ import { TestinominalProp } from "./Testinominal"
 export const content: TestinominalProp[] = [
     {
         videoProp: {
-            imgSrc: "/images/customers-01.jpg",
+            imgSrc: "/images/feature-1.jpg",
             videoSrc: "",
             left: true
         },
@@ -19,7 +19,7 @@ export const content: TestinominalProp[] = [
     },
     {
         videoProp: {
-            imgSrc: "/images/customers-02.jpg",
+            imgSrc: "/images/feature-2.avif",
             videoSrc: "",
             left: false
         },
@@ -29,7 +29,7 @@ export const content: TestinominalProp[] = [
             word: 'No need for manual question creation. Our AI generates tailored questions based on your job description.',
             user: {
                 name: "Patricia de Antolín",
-                avatar: "/images/customer-avatar-01.jpg",
+                avatar: "/images/feature-3.jpg",
                 position: "Talent Acquisition"
             }
         },

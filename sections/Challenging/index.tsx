@@ -8,32 +8,32 @@ const data = [
   {
     label: "Overflow of Unqualified Applicants",
     des: "There are too many applications from unqualified job seekers, making it difficult to identify the right candidates.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-1.jpg",
   },
   {
     label: "AI Resume Impact on Screening",
     des: "AI-generated resumes can bypass algorithms rather than showcase actual skills, severely affecting the screening process.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-2.jpg",
   },
   {
     label: "Skill Exaggeration in Resumes",
     des: "Candidates often exaggerate their skills in resumes, making it difficult to accurately analyze them.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-3.jpg",
   },
   {
     label: "Unconscious Bias in Screening",
     des: "Unconscious bias during screening might result in undeserving candidates being selected.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-4.jpg",
   },
   {
     label: "Scalability Issues in Manual Screening",
     des: "Manual screening with 30-minute phone calls for each candidate is not scalable.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-5.jpg",
   },
   {
     label: "Tech Talent Identification Challenges",
     des: "The huge number of applications for tech positions makes identifying qualified candidates a time-consuming and resource-intensive task.",
-    imgSrc: "/images/features-home-01.jpg",
+    imgSrc: "/images/tech-bg-6.jpg",
   },
 ];
 

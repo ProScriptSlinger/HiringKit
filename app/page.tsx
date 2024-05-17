@@ -23,11 +23,11 @@ export default function Home() {
       <Testinominals />
       <HowWork />
       <Advantages />
+      <Payment />
       <GoodBye />
       <Footer />
       <TopUpBtn />
       {/* <Elevate /> */}
-      {/* <Payment /> */}
     </main>
   );
 }

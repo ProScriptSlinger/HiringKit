@@ -33,8 +33,8 @@ export default (props: UseItemProp) => {
           <IoMdHappy size={30} />
         )}
       </div>
-      <div className="font-bold text-[24px]">{title}</div>
-      <div className="text-[#64748B]">{des}</div>
+      <div className="font-bold text-[18px] md:text-[24px]">{title}</div>
+      <div className="text-[#64748B] max-w-[95vw]">{des}</div>
     </div>
   );
 };

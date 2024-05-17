@@ -17,7 +17,7 @@ const VideoCmp = (props: VideoProp) => {
 
   return (
     <>
-      <div className="relative flex items-center justify-center w-[540px] h-[405px]">
+      <div className="relative flex items-center justify-center w-[540px] h-[250px] md:h-[402px]  max-w-[85vw]">
         <div className="relative top-0 left-0 w-full h-full">
           <div
             className={`${

@@ -41,14 +41,18 @@ export default () => {
         ))}
       </div> */}
       {/* <div className="border-b-2 border-[#F1F5F9] w-full my-4 max-w-[1104px]" /> */}
-      <div className="flex justify-between w-full max-w-[1200px] py-4">
+      <div className="flex flex-col md:flex-row justify-between w-full max-w-[1200px] py-4 px-4 gap-4">
         <div className="text-[#94A3B8] text-[14px]">
           © 2024 <span className=" cursor-pointer">http://HiringKit.co.</span>{" "}
           All rights reserved.
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-2 md:gap-4 text-[#94A3B8]">
+          <div className="text-[10px]">|</div>
           {data2.map((item, index) => (
-            <Item key={index} {...item} />
+            <>
+              <Item key={index} {...item} />
+              <div className="text-[10px]">|</div>
+            </>
           ))}
         </div>
       </div>

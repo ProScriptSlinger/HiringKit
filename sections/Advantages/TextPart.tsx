@@ -15,17 +15,17 @@ export default (props: { textProp: TextPartProp[] }) => {
   const { textProp } = props;
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 px-2">
       {textProp.map((item, index) => (
-        <div className="flex flex-col max-w-[484px] gap-2">
-          <div className="text-[#1E293B] text-[30px] font-bold">
+        <div className="flex flex-col max-w-[484px] gap-1 md:gap-2">
+          <div className="text-[#1E293B] font-bold text-[24px] md:text-[26px] lg:text-[30px]">
             {item.title}
           </div>
-          <div className="pl-4 border-l-2 border-black text-[#64748B] text-[24px]">
+          <div className="pl-4 border-l-2 border-black text-[#64748B] text-[22px] md:text-[24px] ">
             {item.des}
           </div>
           <Comma />
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 px-2">
             <div
               className="text-[#64748B] text-[20px] italic"
               style={{ fontFamily: "Playfair Display" }}

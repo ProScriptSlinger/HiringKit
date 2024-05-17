@@ -1,6 +1,6 @@
 const Leave = () => {
   return (
-    <div className="text-[#CBD5E1]">
+    <div className="text-[#CBD5E1]  pb-4 md:pb-0">
       <svg width="56" height="43">
         <path
           fill="currentColor"

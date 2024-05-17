@@ -64,9 +64,9 @@ export default () => {
 
   return (
     <div className="relative flex flex-col items-center mt-16">
-      <div className="bg-[#F1F5F9] w-full h-[670px]" />
+      <div className="bg-[#F1F5F9] w-full md:h-[670px] h-[400px]" />
       <div className="flex flex-col max-w-[768px] absolute top-0 pt-16">
-        <div className="font-bold text-[48px] text-center">
+        <div className="font-bold text-center text-[25px] md:text-[30px] lg:text-[40px]">
           Technical Screenings Can Be Challenging
         </div>
         <div
@@ -89,7 +89,7 @@ export default () => {
         </div>
         <ScrollAnimation
           animateOnlyOnScrollDown={false}
-          initiallyVisible={false}
+          initiallyVisible={true}
           animateOnce={true}
           animateIn={"animate__fadeInUp"}
           animateOut="animate__fadeOut"

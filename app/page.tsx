@@ -14,7 +14,7 @@ import Testinominals from "@/sections/Testinominals";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-[100vw] overflow-x-hidden">
+    <main className="flex min-h-screen flex-col max-w-[100vw] overflow-x-hidden">
       <Header />
       <Banner />
       <Icons />
@@ -23,10 +23,10 @@ export default function Home() {
       <Testinominals />
       <HowWork />
       <Advantages />
-      {/* <Elevate /> */}
       <GoodBye />
       <Footer />
       <TopUpBtn />
+      {/* <Elevate /> */}
       {/* <Payment /> */}
     </main>
   );

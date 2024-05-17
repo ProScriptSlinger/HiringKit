@@ -3,10 +3,10 @@ import Button from "./Button";
 
 export default () => {
   return (
-    <div className="bg-[#F1F5F9]  py-32 mt-[50px]">
+    <div className="bg-[#F1F5F9]  py-16 md:py-32 mt-[50px]">
       <div className="flex flex-col gap-4 items-center">
-        <div className="flex items-start">
-          <div className="text-[48px] font-bold text-center text-[#1e293b]">
+        <div className="flex items-end  md:items-start">
+          <div className=" text-[25px] md:text-[30px] lg:text-[40px] font-bold text-center text-[#1e293b]">
             Try It Out
             {/* updates, and <span className="text-[#10B981]">confusion</span>. */}
           </div>

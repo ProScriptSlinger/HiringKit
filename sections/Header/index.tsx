@@ -5,6 +5,7 @@ import TxtBtn from "@/components/TxtBtn";
 import { useEffect, useState } from "react";
 import { useScreenSize } from "@/utils/customHooks";
 import Logo from "@/components/icons/Logo";
+import Dropdown from "@/components/Dropdown";
 
 export default () => {
   const [isSticky, setSticky] = useState<boolean>(false);
@@ -35,16 +36,42 @@ export default () => {
         width: "100%",
       }}
     >
-      <div className="flex items-center">
-        <Logo />
-        {menu.map((item, index) => (
-          <TxtBtn key={index} {...item} />
-        ))}
-      </div>
-      <div className="flex">
-        <TxtBtn label="Sign in" path="signin" />
-        <TxtBtn label="Sign up" path="signup" />
-      </div>
+      {screenSize == "sm" || !screenSize ? (
+        <div className="flex items-center justify-between w-full px-4 md:px-8">
+          <div className="flex flex-col items-center text-white mr-4">
+            <Logo />
+            <div className="font-bold text-[14px]">HiringKit</div>
+          </div>
+
+          <Dropdown
+            list={[
+              ...menu,
+              { label: "Sign in", path: "signin" },
+              { label: "Sign up", path: "signup" },
+            ]}
+          />
+          {/* {menu.map((item, index) => (
+            <TxtBtn key={index} {...item} />
+          ))} */}
+        </div>
+      ) : (
+        <>
+          <div className="flex items-center">
+            <div className="flex flex-col items-center text-white mr-4">
+              <Logo />
+              <div className="font-bold text-[14px]">HiringKit</div>
+            </div>
+
+            {menu.map((item, index) => (
+              <TxtBtn key={index} {...item} />
+            ))}
+          </div>
+          <div className="flex">
+            <TxtBtn label="Sign in" path="signin" />
+            <TxtBtn label="Sign up" path="signup" />
+          </div>
+        </>
+      )}
     </div>
   );
 };

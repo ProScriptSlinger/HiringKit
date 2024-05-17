@@ -16,7 +16,7 @@ export const useClickOutside = (ref: React.RefObject<HTMLDivElement>, callback: 
 };
 
 export const useScreenSize = () => {
-    const [screenSize, setScreenSize] = useState("");
+    const [screenSize, setScreenSize] = useState("sm");
 
     useEffect(() => {
         const handleResize = () => {

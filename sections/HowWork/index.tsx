@@ -25,7 +25,7 @@ export default () => {
                 animateOut="animate__fadeOut"
                 offset={-100}
                 delay={200}
-                duration={0.4}
+                duration={0.7}
               >
                 <HowItem key={index} index={index} {...item} />
               </ScrollAnimation>

@@ -95,7 +95,7 @@ export default () => {
           animateOut="animate__fadeOut"
           offset={-100}
           delay={200}
-          duration={0.4}
+          duration={0.7}
         >
           <div className={`max-w-[768px] mt-8 shadow-lg`}>
             <img

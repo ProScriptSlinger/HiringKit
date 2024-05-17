@@ -3,7 +3,7 @@ import { TxtBtnProp } from "./TxtBtn";
 import { LuMenuSquare } from "react-icons/lu";
 import { useState } from "react";
 
-export default ({ list }: { list: TxtBtnProp[] }) => {
+const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
   const [visible, setVisible] = useState<boolean>(false);
   return (
     <div onClick={() => setVisible(!visible)}>
@@ -40,3 +40,5 @@ export default ({ list }: { list: TxtBtnProp[] }) => {
     </div>
   );
 };
+
+export default Dropdown;

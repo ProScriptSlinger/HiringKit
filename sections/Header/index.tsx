@@ -58,7 +58,7 @@ export default () => {
       ) : (
         <>
           <div className="flex items-center">
-            <div className="flex flex-col items-center text-[#2071E5] mr-4">
+            <div className="flex items-center text-[#2071E5] mr-4">
               <Logo />
               <div className="font-bold text-[14px]">HiringKit</div>
             </div>

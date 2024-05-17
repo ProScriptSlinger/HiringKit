@@ -5,7 +5,7 @@ import WhyItem from "./WhyItem";
 import ScrollAnimation from "react-scroll-animation-wrapper";
 export default () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center" id="use">
       <div className="border-b-2 border-[#F1F5F9] w-[60vw] mt-[40px]" />
       <ScrollAnimation
         animateOnlyOnScrollDown={false}

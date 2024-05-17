@@ -8,7 +8,7 @@ import ScrollAnimation from "react-scroll-animation-wrapper";
 export default () => {
   const [isYearly, setYearly] = useState<boolean>(false);
   return (
-    <div>
+    <div id="prices">
       <div className="relative flex flex-col items-center mt-[60px]">
         <div className="bg-[#101D2D] w-full h-[670px]" />
         <div className="flex flex-col items-center  absolute top-0 pt-16">

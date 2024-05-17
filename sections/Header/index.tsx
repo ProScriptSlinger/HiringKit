@@ -27,6 +27,7 @@ export default () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <div
       className="py-4 bg-[#101D2D] flex items-center justify-around z-50 transition-all"

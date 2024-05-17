@@ -6,7 +6,10 @@ import ScrollAnimation from "react-scroll-animation-wrapper";
 
 export default () => {
   return (
-    <div className="flex flex-col items-center gap-4 h-[2080px] lg:h-[700px]">
+    <div
+      id="work"
+      className="flex flex-col items-center gap-4 h-[2080px] lg:h-[700px]"
+    >
       <div className="mt-16 relative w-full">
         <div className="banner-polygon h-[480px]" />
         <div className="absolute top-20 flex flex-col px-16 w-full">

@@ -1,20 +1,24 @@
 const menu = [
     {
-        label: 'Pricing',
-        path: '/pricing',
+        label: 'Why Use',
+        path: 'use',
     },
     {
-        label: 'Integrations',
-        path: '/integratinos',
+        label: 'Testinominals',
+        path: 'testinominals',
     },
     {
-        label: 'Book a demo',
-        path: '/boook-demo',
+        label: 'How It Works',
+        path: 'work',
     },
     {
-        label: 'Blog',
-        path: '/blog',
+        label: 'Features',
+        path: 'features',
     },
+    {
+        label: 'Prices',
+        path: 'prices',
+    }
 ];
 
 export default menu;

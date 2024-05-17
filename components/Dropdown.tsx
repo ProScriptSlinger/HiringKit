@@ -5,6 +5,14 @@ import { useState } from "react";
 
 const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
   const [visible, setVisible] = useState<boolean>(false);
+  const scrolltoHash = function (element_id: any) {
+    const element = document.getElementById(element_id);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
+  };
   return (
     <div onClick={() => setVisible(!visible)}>
       <button
@@ -27,12 +35,12 @@ const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
         >
           {list.map((item, index) => (
             <li key={index}>
-              <a
-                href="#"
+              <div
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                onClick={() => scrolltoHash(item.path)}
               >
                 {item.label}
-              </a>
+              </div>
             </li>
           ))}
         </ul>

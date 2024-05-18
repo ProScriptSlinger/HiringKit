@@ -66,20 +66,12 @@ export default () => {
             </div>
 
             {menu.map((item, index) => (
-              <TxtBtn key={index} {...item} setModalVisible={setModalVisible} />
+              <TxtBtn key={index} {...item} />
             ))}
           </div>
           <div className="flex">
-            <TxtBtn
-              label="Sign in"
-              path="signin"
-              setModalVisible={setModalVisible}
-            />
-            <TxtBtn
-              label="Sign up"
-              path="signup"
-              setModalVisible={setModalVisible}
-            />
+            <TxtBtn label="Sign in" path="signin" />
+            <TxtBtn label="Sign up" path="signup" />
           </div>
         </>
       )}

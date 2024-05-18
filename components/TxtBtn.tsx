@@ -3,14 +3,12 @@ import Link from "next/link";
 export interface TxtBtnProp {
   label: string;
   path: string;
-  setModalVisible: Function;
 }
 
 const TxtBtn = (props: TxtBtnProp) => {
-  const { label, path, setModalVisible } = props;
+  const { label, path } = props;
   const scrolltoHash = function (element_id: any) {
     if (element_id == "faqs") {
-      setModalVisible(true);
     } else {
       const element = document.getElementById(element_id);
       element?.scrollIntoView({

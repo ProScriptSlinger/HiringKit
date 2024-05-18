@@ -19,6 +19,7 @@ const Faqs = () => {
       {data.map((item, index) => (
         <CollapseItem
           index={index}
+          key={index}
           {...item}
           activeId={activeId}
           setActiveId={setActiveId}

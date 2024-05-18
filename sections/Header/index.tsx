@@ -48,14 +48,7 @@ export default () => {
             <div className="font-bold text-[14px]">HiringKit</div>
           </div>
 
-          <Dropdown
-            setModalVisible={setModalVisible}
-            list={[
-              ...menu,
-              { label: "Sign in", path: "signin" },
-              { label: "Sign up", path: "signup" },
-            ]}
-          />
+          <Dropdown setModalVisible={setModalVisible} list={menu} />
         </div>
       ) : (
         <>
@@ -68,10 +61,6 @@ export default () => {
             {menu.map((item, index) => (
               <TxtBtn key={index} {...item} />
             ))}
-          </div>
-          <div className="flex">
-            <TxtBtn label="Sign in" path="signin" />
-            <TxtBtn label="Sign up" path="signup" />
           </div>
         </>
       )}

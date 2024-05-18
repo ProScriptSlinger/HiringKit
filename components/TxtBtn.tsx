@@ -23,7 +23,7 @@ const TxtBtn = (props: TxtBtnProp) => {
       className="cursor-pointer font-bold text-black/80 px-4 hover:text-[#2174EA]"
       onClick={() => scrolltoHash(path)}
     >
-      {label}
+      {label == "Faqs" ? <Link href="/faqs">{label}</Link> : label}
     </div>
   );
 };

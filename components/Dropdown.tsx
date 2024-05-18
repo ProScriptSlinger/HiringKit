@@ -2,6 +2,7 @@
 import { TxtBtnProp } from "./TxtBtn";
 import { LuMenuSquare } from "react-icons/lu";
 import { useState } from "react";
+import Link from "next/link";
 
 const Dropdown = ({
   list,
@@ -50,7 +51,11 @@ const Dropdown = ({
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 onClick={() => scrolltoHash(item.path)}
               >
-                {item.label}
+                {item.label == "Faqs" ? (
+                  <Link href="/faqs">{item.label}</Link>
+                ) : (
+                  item.label
+                )}
               </div>
             </li>
           ))}

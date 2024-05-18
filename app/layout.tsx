@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" style={{ width: "100vw", overflowX: "hidden" }}>
       <head>
-        <link rel="icon" href="/Logo.png" />
+        <link rel="icon" href="/Logo.PNG" />
       </head>
       <body>{children}</body>
     </html>

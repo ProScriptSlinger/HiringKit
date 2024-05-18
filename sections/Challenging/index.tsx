@@ -1,37 +1,36 @@
 "use client";
+import Card from "./Card";
 import { useState } from "react";
-import IconBtn from "./IconBtn";
-import { useEffect } from "react";
-import "./BounceUpAnimation.css";
 import ScrollAnimation from "react-scroll-animation-wrapper";
+
 const data = [
   {
-    label: "Overflow of Unqualified Applicants",
+    title: "Overflow of Unqualified Applicants",
     des: "There are too many applications from unqualified job seekers, making it difficult to identify the right candidates.",
     imgSrc: "/images/tech-bg-1.jpg",
   },
   {
-    label: "AI Resume Impact on Screening",
+    title: "AI Resume Impact on Screening",
     des: "AI-generated resumes can bypass algorithms rather than showcase actual skills, severely affecting the screening process.",
     imgSrc: "/images/tech-bg-2.jpg",
   },
   {
-    label: "Skill Exaggeration in Resumes",
+    title: "Skill Exaggeration in Resumes",
     des: "Candidates often exaggerate their skills in resumes, making it difficult to accurately analyze them.",
     imgSrc: "/images/tech-bg-3.jpg",
   },
   {
-    label: "Unconscious Bias in Screening",
+    title: "Unconscious Bias in Screening",
     des: "Unconscious bias during screening might result in undeserving candidates being selected.",
     imgSrc: "/images/tech-bg-4.jpg",
   },
   {
-    label: "Scalability Issues in Manual Screening",
+    title: "Scalability Issues in Manual Screening",
     des: "Manual screening with 30-minute phone calls for each candidate is not scalable.",
     imgSrc: "/images/tech-bg-5.jpg",
   },
   {
-    label: "Tech Talent Identification Challenges",
+    title: "Tech Talent Identification Challenges",
     des: "The huge number of applications for tech positions makes identifying qualified candidates a time-consuming and resource-intensive task.",
     imgSrc: "/images/tech-bg-6.jpg",
   },
@@ -39,74 +38,71 @@ const data = [
 
 export default () => {
   const [activeId, setActiveId] = useState<number>(0);
-  const [isBouncing, setIsBouncing] = useState<boolean>(false);
-  const handleClick = (iconType: number) => {
-    setActiveId(iconType);
-    setIsBouncing(true);
-    // Reset animation after a certain duration
-    setTimeout(() => {
-      setIsBouncing(false);
-    }, 500); // Adjust duration as needed
-  };
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveId((prevState) => (prevState + 1 > 5 ? 0 : prevState + 1));
-      setIsBouncing(true);
-      // Reset animation after a certain duration
-      setTimeout(() => {
-        setIsBouncing(false);
-      }, 500);
-    }, 3000); // Update state every 1000ms (1 second)
-
-    return () => clearInterval(interval);
-  }, []);
-
+  const [page, setPage] = useState<number>(0);
   return (
-    <div className="relative flex flex-col items-center mt-16">
-      <div className="bg-[#F1F5F9] w-full md:h-[670px] h-[400px]" />
-      <div className="flex flex-col max-w-[768px] absolute top-0 pt-16">
-        <div className="font-bold text-center text-[25px] md:text-[30px] lg:text-[40px]">
-          Technical Screenings Can Be Challenging
-        </div>
-        <div
-          className={`box ${
-            isBouncing ? "bounce-up" : ""
-          }  text-[18px] text-center min-h-[54px] mt-8`}
-        >
-          {data[activeId].des}
-        </div>
-        <div className="flex justify-between w-full pt-8">
-          {data.map((item, index) => (
-            <IconBtn
-              key={index}
-              iconType={index}
-              label={item.label}
-              onClick={handleClick}
-              isActive={index !== activeId}
-            />
-          ))}
-        </div>
-        <ScrollAnimation
-          animateOnlyOnScrollDown={false}
-          initiallyVisible={false}
-          animateOnce={true}
-          animateIn={"animate__fadeInUp"}
-          animateOut="animate__fadeOut"
-          offset={-100}
-          delay={200}
-          duration={0.7}
-        >
-          <div className={`max-w-[768px] mt-8 shadow-lg`}>
-            <img
-              src={data[activeId].imgSrc}
-              width="100%"
-              alt={data[activeId].label}
-            />
+    <div className="flex flex-col items-start relative mt-[50px]">
+      <div className="bg-[#FBFBFB] w-full md:h-[650px] h-[400px]" />
+      <ScrollAnimation
+        animateOnlyOnScrollDown={false}
+        initiallyVisible={false}
+        animateOnce={true}
+        animateIn={"animate__fadeIn"}
+        animateOut="animate__fadeOut"
+        offset={-100}
+        delay={200}
+        duration={0.7}
+      >
+        <div className="flex flex-col items-center w-full absolute gap-8 top-5 mt-8 px-4">
+          <div className="font-bold text-center text-[25px] md:text-[30px] lg:text-[40px]">
+            Technical Screenings Can Be Challenging
           </div>
-        </ScrollAnimation>
-      </div>
-      <div className=" mt-[260px]" />
+          <div className="max-w-[1200px] flex flex-col lg:flex-row items-start gap-4 transition-all">
+            <div className="flex flex-col items-center gap-4">
+              {data.map(
+                (item, index) =>
+                  ((page == 0 && index < 3) ||
+                    (page == 1 && index > 2 && index < 6)) && (
+                    <div key={index}>
+                      <Card
+                        key={index}
+                        activeId={activeId}
+                        setActiveId={setActiveId}
+                        index={index}
+                        {...item}
+                      />
+                    </div>
+                  )
+              )}
+              <div className="flex gap-4">
+                <div
+                  className={`${
+                    page == 0 ? "border-black" : "border-[#F1F5F9]"
+                  } border-2 rounded-full p-2 px-4 text-black`}
+                  onClick={() => setPage(0)}
+                >
+                  1
+                </div>
+                <div
+                  className={`${
+                    page == 1 ? "border-black" : "border-[#F1F5F9]"
+                  } border-2 rounded-full p-2 px-4 text-black`}
+                  onClick={() => setPage(1)}
+                >
+                  2
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src={data[activeId].imgSrc}
+                alt={data[activeId].title}
+                width={600}
+                height={500}
+              />
+            </div>
+          </div>
+        </div>
+      </ScrollAnimation>
     </div>
   );
 };

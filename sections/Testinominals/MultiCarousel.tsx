@@ -35,10 +35,13 @@ const MultiCarousel = (props: CarouselProps) => {
   const Testinominal = (props: PropType) => {
     const { word, avatar, name, position } = props;
     return (
-      <div className="radius-4 mx-16 flex flex-col gap-4 p-4 min-h-[220px] justify-between max-w-[288px] bg-slate-50 shadow-sm rounded-md">
+      <div
+        style={{ borderWidth: "1px" }}
+        className="border-[#F1F5F9] radius-4 mx-16 flex flex-col  p-4 min-h-[180px] justify-between max-w-[288px] bg-[#FBFBFB] shadow-sm rounded-md"
+      >
         <div>
-          <Comma />
-          <div className="text-[#94A3B8]">{word}</div>
+          {/* <Comma /> */}
+          <div className="text-[#49505a]">{word}</div>
         </div>
         <div className="flex items-center gap-2">
           <div>
@@ -51,7 +54,7 @@ const MultiCarousel = (props: CarouselProps) => {
             />
           </div>
           <div className="flex-col">
-            <div className="text-[18px] font-bold gap-2">{position}</div>
+            <div className="text-[18px] font-semibold gap-2">{position}</div>
             <div>{name}</div>
           </div>
         </div>

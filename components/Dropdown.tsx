@@ -3,16 +3,27 @@ import { TxtBtnProp } from "./TxtBtn";
 import { LuMenuSquare } from "react-icons/lu";
 import { useState } from "react";
 
-const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
+const Dropdown = ({
+  list,
+  setModalVisible,
+}: {
+  list: TxtBtnProp[];
+  setModalVisible: Function;
+}) => {
   const [visible, setVisible] = useState<boolean>(false);
   const scrolltoHash = function (element_id: any) {
-    const element = document.getElementById(element_id);
-    element?.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
+    if (element_id == "faqs") {
+      setModalVisible(true);
+    } else {
+      const element = document.getElementById(element_id);
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+    }
   };
+
   return (
     <div onClick={() => setVisible(!visible)}>
       <button

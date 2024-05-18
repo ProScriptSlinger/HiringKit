@@ -19,7 +19,7 @@ export const content: TestinominalProp[] = [
     },
     {
         videoProp: {
-            imgSrc: "/images/feature-2.avif",
+            imgSrc: "/images/feature-2.PNG",
             videoSrc: "",
             left: false
         },

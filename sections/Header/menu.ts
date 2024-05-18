@@ -18,7 +18,11 @@ const menu = [
     {
         label: 'Prices',
         path: 'prices',
-    }
+    },
+    {
+        label: 'Faqs',
+        path: 'faqs',
+    },
 ];
 
 export default menu;

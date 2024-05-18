@@ -10,10 +10,10 @@ export default () => {
   return (
     <div id="prices">
       <div className="relative flex flex-col items-center mt-[60px]">
-        <div className="bg-[#101D2D] w-full h-[670px]" />
+        <div className="bg-[#FBFBFB] w-full h-[670px]" />
         <div className="flex flex-col items-center  absolute top-0 pt-16">
           <div className="font-bold text-[48px] text-center max-w-[768px]">
-            <div className="text-[48px] text-[#F1F5F9] font-bold text-center">
+            <div className="text-[48px] text-black/90 font-bold text-center">
               Find the right plan for your <br />
               business
             </div>

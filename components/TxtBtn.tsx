@@ -3,21 +3,26 @@ import Link from "next/link";
 export interface TxtBtnProp {
   label: string;
   path: string;
+  setModalVisible: Function;
 }
 
 const TxtBtn = (props: TxtBtnProp) => {
+  const { label, path, setModalVisible } = props;
   const scrolltoHash = function (element_id: any) {
-    const element = document.getElementById(element_id);
-    element?.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
+    if (element_id == "faqs") {
+      setModalVisible(true);
+    } else {
+      const element = document.getElementById(element_id);
+      element?.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+    }
   };
-  const { label, path } = props;
   return (
     <div
-      className="cursor-pointer text-[#94A3B8] px-4 hover:text-[#1666EA]"
+      className="cursor-pointer font-bold text-black/80 px-4 hover:text-[#2174EA]"
       onClick={() => scrolltoHash(path)}
     >
       {label}

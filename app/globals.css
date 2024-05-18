@@ -11,5 +11,5 @@
   width: 100vw;
   -webkit-clip-path: polygon(0 0, 5760px 0, 5760px calc(100% - 352px), 0 100%);
    clip-path: polygon(0 0, 5760px 0, 5760px calc(100% - 352px), 0 100%);
-   background-color: #101D2D;
+   background-color: #FBFBFB;
 }

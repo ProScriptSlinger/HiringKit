@@ -13,7 +13,7 @@ export default () => {
       <div className="mt-16 relative w-full">
         <div className="banner-polygon h-[480px]" />
         <div className="absolute top-20 flex flex-col px-16 w-full">
-          <div className="text-center text-white font-bold text-[25px] md:text-[30px] lg:text-[40px]">
+          <div className="text-center text-black/90 font-bold text-[25px] md:text-[30px] lg:text-[40px]">
             How It Works
           </div>
           <div className="flex flex-col lg:flex-row items-center gap-16 pt-16 justify-center">

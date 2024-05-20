@@ -6,7 +6,7 @@ export default () => {
     <div className="bg-[#4B8FFB]  py-16 md:py-32 mt-[2400px] md:mt-[1170px] lg:mt-[300px] ">
       <div className="flex flex-col gap-4 items-center">
         <div className="flex items-end  md:items-start">
-          <div className=" text-[25px] md:text-[30px] lg:text-[40px] font-bold text-center text-white">
+          <div className=" text-[25px] md:text-[30px] lg:text-[40px] font-bold text-center text-white font-title">
             Try It Out
             {/* updates, and <span className="text-[#10B981]">confusion</span>. */}
           </div>

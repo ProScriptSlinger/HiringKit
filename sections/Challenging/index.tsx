@@ -53,7 +53,7 @@ export default () => {
         duration={0.7}
       >
         <div className="flex flex-col items-center w-full absolute gap-8 top-5 mt-8 px-4">
-          <div className="font-bold text-center text-[25px] md:text-[30px] lg:text-[40px]">
+          <div className="font-extrabold text-center text-[25px] md:text-[30px] lg:text-[40px] font-title">
             Technical Screenings Can Be Challenging
           </div>
           <div className="max-w-[1200px] flex flex-col lg:flex-row items-start gap-4 transition-all">

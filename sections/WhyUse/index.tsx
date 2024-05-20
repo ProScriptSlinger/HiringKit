@@ -17,7 +17,7 @@ export default () => {
         delay={200}
         duration={0.7}
       >
-        <div className="font-bold text-center pt-[40px] md:pt-[80px] text-[25px] md:text-[30px] lg:text-[40px] px-2 ">
+        <div className="font-extrabold text-center pt-[40px] md:pt-[80px] text-[25px] md:text-[30px] lg:text-[40px] px-2 font-title">
           Why Use HiringKit’s AI-Powered Video <br></br>Interview Software?
         </div>
       </ScrollAnimation>

@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "animate.css/animate.css";
-import Head from "next/head";
+import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/Logo.PNG" />
       </head>
-      <body>{children}</body>
+      <body className={inter.className}>
+        <main className="flex min-h-screen flex-col max-w-[100vw] overflow-x-hidden">
+          <Header />
+          {children}
+          <Footer />
+        </main>
+      </body>
     </html>
   );
 }

@@ -13,7 +13,7 @@ export default () => {
         <div className="bg-[#FBFBFB] w-full h-[670px]" />
         <div className="flex flex-col items-center  absolute top-0 pt-16">
           <div className="font-bold text-[48px] text-center max-w-[768px]">
-            <div className="text-black/90 font-bold text-center text-[25px] md:text-[30px] lg:text-[40px]">
+            <div className="text-black/90 font-extrabold text-center text-[25px] md:text-[30px] lg:text-[40px] font-title">
               Find the right plan for your <br />
               business
             </div>

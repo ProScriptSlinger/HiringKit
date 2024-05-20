@@ -9,7 +9,7 @@ export default () => {
     >
       <div className="border-b-2 border-[#F1F5F9] w-[60vw] mb-8" />
       {/* <div className="border-b-2 border-[#F1F5F9] w-[60vw] mb-8" /> */}
-      <div className="font-bold text-[25px] md:text-[30px] lg:text-[40px]">
+      <div className="font-extrabold text-[25px] md:text-[30px] lg:text-[40px] font-title">
         Early User Testimonials
       </div>
       <div className="flex justify-center py-8 w-full">

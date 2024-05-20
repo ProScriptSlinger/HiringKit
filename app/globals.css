@@ -3,9 +3,23 @@
 @tailwind utilities;
 @import 'animate.css/animate.min.css';
 
-* {
-  font-family: Gilroy ExtraBold, sans-serif;
+
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Adjust font weight if needed */
+  font-style: normal; /* Adjust font style if needed */
 }
+
+.font-title {
+  font-family: "Gilroy ExtraBold";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  unicode-bidi: isolate
+  /* font-weight: 800; */
+}
+
+
 
 .banner-polygon {
   width: 100vw;

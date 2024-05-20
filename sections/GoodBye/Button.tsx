@@ -2,7 +2,7 @@ export default ({ label }: { label?: string }) => {
   return (
     <button
       type="button"
-      className="w-full text-white  justify-center  bg-[#2174ea] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      className="w-full font-title text-white  justify-center  bg-[#2174ea] hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
     >
       {label ?? "Request Demo"}
       <svg

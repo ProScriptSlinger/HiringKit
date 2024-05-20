@@ -14,15 +14,15 @@ export default (props: CardItemProp) => {
   const { price, des, title, services, isYearly, isPopular } = props;
 
   return (
-    <div className=" max-w-[304px] min-h-[610px] bg-white shadow-lg">
-      <div className="p-8 flex flex-col gap-8 justify-between relative min-h-[610px]">
+    <div className=" max-w-[304px]  bg-white shadow-lg">
+      <div className="p-8 flex flex-col gap-8 justify-between relative min-h-[635px]">
         {isPopular && (
           <div className="absolute -top-2 right-3">
             <Chip />
           </div>
         )}
         <div className="flex flex-col">
-          <div className="font-semibold text-[18px]">{title}</div>
+          <div className="font-semibold text-[18px] font-title">{title}</div>
           <div className="flex gap-1 items-center">
             <span className="text-[32px] font-medium text-[#64748B]">$</span>
             <span

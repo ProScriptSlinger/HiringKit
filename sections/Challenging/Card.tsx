@@ -15,7 +15,7 @@ export default ({
 }) => {
   return (
     <div
-      className={`max-w-[540px] p-4 border-[#EAEAEA] flex justify-center items-center gap-4 rounded-md ${
+      className={`max-w-[540px] p-4 border-[#EAEAEA] flex justify-center items-center gap-4 rounded-md cursor-pointer ${
         index == activeId ? "bg-[#EAEAEA]" : "bg-transparent"
       } transition-all`}
       style={{ borderWidth: "1px" }}

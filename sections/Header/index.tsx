@@ -18,7 +18,7 @@ export default () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 30) {
         setSticky(true);
       } else {
         setSticky(false);

@@ -41,7 +41,7 @@ const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
           {list.map((item, index) => (
             <li key={index}>
               <div
-                className="block px-4 py-2 hover:bg-gray-100 "
+                className="block px-4 py-2 "
                 onClick={() => scrolltoHash(item.path)}
               >
                 {item.label == "Faqs" ? (

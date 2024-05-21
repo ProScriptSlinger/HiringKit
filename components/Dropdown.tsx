@@ -4,17 +4,10 @@ import { LuMenuSquare } from "react-icons/lu";
 import { useState } from "react";
 import Link from "next/link";
 
-const Dropdown = ({
-  list,
-  setModalVisible,
-}: {
-  list: TxtBtnProp[];
-  setModalVisible: Function;
-}) => {
+const Dropdown = ({ list }: { list: TxtBtnProp[] }) => {
   const [visible, setVisible] = useState<boolean>(false);
   const scrolltoHash = function (element_id: any) {
-    if (element_id == "faqs") {
-      setModalVisible(true);
+    if (element_id == "faqs" || element_id == "prices") {
     } else {
       const element = document.getElementById(element_id);
       element?.scrollIntoView({
@@ -48,13 +41,15 @@ const Dropdown = ({
           {list.map((item, index) => (
             <li key={index}>
               <div
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                className="block px-4 py-2 hover:bg-gray-100 "
                 onClick={() => scrolltoHash(item.path)}
               >
                 {item.label == "Faqs" ? (
                   <Link href="/faqs">{item.label}</Link>
-                ) : item.label == "Prices" ? (
+                ) : item.label == "Pricing" ? (
                   <Link href="/pricing">{item.label}</Link>
+                ) : item.label == "Home" ? (
+                  <Link href="/">{item.label}</Link>
                 ) : (
                   item.label
                 )}

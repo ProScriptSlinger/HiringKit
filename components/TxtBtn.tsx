@@ -7,6 +7,7 @@ export interface TxtBtnProp {
 
 const TxtBtn = (props: TxtBtnProp) => {
   const { label, path } = props;
+
   const scrolltoHash = function (element_id: any) {
     if (element_id == "faqs" || element_id == "prices") {
     } else {
@@ -27,6 +28,8 @@ const TxtBtn = (props: TxtBtnProp) => {
         <Link href="/faqs">{label}</Link>
       ) : label == "Pricing" ? (
         <Link href="/pricing">{label}</Link>
+      ) : label == "Home" ? (
+        <Link href="/">{label}</Link>
       ) : (
         label
       )}

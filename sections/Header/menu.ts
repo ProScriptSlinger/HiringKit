@@ -25,4 +25,19 @@ const menu = [
     },
 ];
 
+export const submenu = [
+    {
+        label: 'Home',
+        path: '',
+    },
+    {
+        label: 'Pricing',
+        path: 'prices',
+    },
+    {
+        label: 'Faqs',
+        path: 'faqs',
+    },
+]
+
 export default menu;

@@ -1,5 +1,6 @@
 "use client";
 import menu from "./menu";
+import { submenu } from "./menu";
 import { TxtBtnProp } from "@/components/TxtBtn";
 import TxtBtn from "@/components/TxtBtn";
 import { useEffect, useState } from "react";
@@ -7,13 +8,22 @@ import { useScreenSize } from "@/utils/customHooks";
 import Logo from "@/components/icons/Logo";
 import Dropdown from "@/components/Dropdown";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
+interface MenuType {
+  label: string;
+  path: string;
+}
 export default () => {
   const [isSticky, setSticky] = useState<boolean>(false);
-  const [modalVisible, setModalVisible] = useState<Boolean>(false);
-
+  const pathname = usePathname();
   // Usage in a component
+  const [currentMenu, setMenu] = useState<MenuType[]>(menu);
   const screenSize = useScreenSize();
+  useEffect(() => {
+    if (pathname == "/pricing" || pathname == "/faqs") setMenu(submenu);
+    else setMenu(menu);
+  }, [pathname]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,9 +61,8 @@ export default () => {
           </Link>
 
           <Dropdown
-            setModalVisible={setModalVisible}
             list={[
-              ...menu,
+              ...currentMenu,
               { label: "Sign in", path: "signin" },
               { label: "Sign up", path: "signup" },
             ]}
@@ -69,7 +78,7 @@ export default () => {
               </div>
             </Link>
 
-            {menu.map((item, index) => (
+            {currentMenu.map((item, index) => (
               <TxtBtn key={index} {...item} />
             ))}
           </div>

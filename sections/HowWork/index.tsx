@@ -12,7 +12,7 @@ export default () => {
     >
       <div className="mt-16 relative w-full">
         <div className="banner-polygon h-[480px]" />
-        <div className="absolute top-20 flex flex-col px-16 w-full">
+        <div className="absolute top-20 flex flex-col px-2 md:px-16 w-full">
           <div className="text-center text-black/90 font-extrabold text-[25px] md:text-[30px] lg:text-[40px] font-title">
             How It Works
           </div>

@@ -22,7 +22,7 @@ export default (props: CardItemProp) => {
           </div>
         )}
         <div className="flex flex-col">
-          <div className="font-semibold text-[18px] font-title">{title}</div>
+          <div className="font-semibold text-[30px] font-title">{title}</div>
           <div className="flex gap-1 items-center">
             <span className="text-[32px] font-medium text-[#64748B]">$</span>
             <span
@@ -37,9 +37,12 @@ export default (props: CardItemProp) => {
           </div>
           <div className="text-[#64748B] text-[16px]">{des}</div>
           <div className="border-b-2 border-[#F1F5F9] w-full my-4 max-w-[80vw]" />
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1">
             {services.map((item, index) => (
-              <div className="flex items-center gap-2 -ml-4">
+              <div
+                className="flex items-center gap-2 -ml-4 italic text-[18px]"
+                style={{ fontFamily: "Playfair Display" }}
+              >
                 <FaCheck color="#10AA81" size={16} />
                 <div>{item}</div>
               </div>

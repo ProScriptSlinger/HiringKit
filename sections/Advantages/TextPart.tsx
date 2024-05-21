@@ -21,7 +21,7 @@ export default (props: { textProp: TextPartProp[] }) => {
           <div className="text-[#1E293B] font-bold text-[24px] md:text-[26px] lg:text-[30px] font-title">
             {item.title}
           </div>
-          <div className="pl-4 border-l-2 border-black text-[#64748B] text-[22px] md:text-[24px] ">
+          <div className="pl-4 border-l-2 border-black text-[#64748B] text-[20px] md:text-[22px] ">
             {item.des}
           </div>
           {/* <Comma /> */}

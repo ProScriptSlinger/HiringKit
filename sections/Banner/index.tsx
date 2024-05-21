@@ -17,10 +17,10 @@ export default () => {
 
   return (
     <>
-      <div className="flex flex-col items-center gap-4 pt-16 px-4 relative">
-        <div className="banner-polygon h-[480px] md:h-[680px]  absolute -top-1 z-10" />
+      <div className="flex flex-col items-center gap-4 pt-12 px-4 relative">
+        <div className="banner-polygon h-[500px] md:h-[680px]  absolute -top-1 z-10" />
         <div className="z-20  text-black/80 flex flex-col items-center">
-          <div className="font-title min-h-[170px] text-[30px] md:text-[40px] lg:text-[55px] font-extrabold text-center -tracking-[0.1rem]">
+          <div className="font-title min-h-[180px] text-[30px] md:text-[40px] lg:text-[55px] font-extrabold text-center -tracking-[0.1rem]">
             Screen Fast, Hire Top 1% Talent with <br />
             <span className=" text-[#2174EA]">
               <Typewriter text="AI-Powered Video Interviews" speed={130} />
@@ -32,7 +32,7 @@ export default () => {
             <br /> assesses candidates, and provides detailed evaluations,
             saving you time and improving hiring quality.
           </p>
-          <div className="font-title text-[18px] rounded-full px-6 py-3 bg-gradient-to-bl  from-[#1C64F2] to-blue-500 hover:bg-[#28A0FA]  text-white font-semibold cursor-pointer w-fit mt-2">
+          <div className="font-title text-[18px] rounded-full px-6 py-3 bg-gradient-to-bl  from-[#1C64F2] to-blue-500 hover:bg-[#28A0FA]  text-white font-semibold cursor-pointer w-fit mt-6">
             Try free for 1 month
           </div>
           <div className="relative flex items-center justify-center">

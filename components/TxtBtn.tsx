@@ -8,7 +8,7 @@ export interface TxtBtnProp {
 const TxtBtn = (props: TxtBtnProp) => {
   const { label, path } = props;
   const scrolltoHash = function (element_id: any) {
-    if (element_id == "faqs") {
+    if (element_id == "faqs" || element_id == "prices") {
     } else {
       const element = document.getElementById(element_id);
       element?.scrollIntoView({
@@ -23,7 +23,13 @@ const TxtBtn = (props: TxtBtnProp) => {
       className="cursor-pointer font-bold text-black/80 px-4 hover:text-[#2174EA]"
       onClick={() => scrolltoHash(path)}
     >
-      {label == "Faqs" ? <Link href="/faqs">{label}</Link> : label}
+      {label == "Faqs" ? (
+        <Link href="/faqs">{label}</Link>
+      ) : label == "Prices" ? (
+        <Link href="/pricing">{label}</Link>
+      ) : (
+        label
+      )}
     </div>
   );
 };

@@ -53,6 +53,8 @@ const Dropdown = ({
               >
                 {item.label == "Faqs" ? (
                   <Link href="/faqs">{item.label}</Link>
+                ) : item.label == "Prices" ? (
+                  <Link href="/pricing">{item.label}</Link>
                 ) : (
                   item.label
                 )}

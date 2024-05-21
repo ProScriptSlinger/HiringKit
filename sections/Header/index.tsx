@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { useScreenSize } from "@/utils/customHooks";
 import Logo from "@/components/icons/Logo";
 import Dropdown from "@/components/Dropdown";
-import Modal from "@/components/Modal";
 import Link from "next/link";
 
 export default () => {
@@ -47,7 +46,7 @@ export default () => {
           <Link href="/">
             <div className="flex  items-center text-black mr-4 cursor-pointer">
               <Logo />
-              <div className="font-bold text-[18px]">HiringKit</div>
+              <div className="font-bold text-[24px]">HiringKit</div>
             </div>
           </Link>
 
@@ -66,7 +65,7 @@ export default () => {
             <Link href="/">
               <div className="flex  items-center text-black mr-8 cursor-pointer">
                 <Logo />
-                <div className="font-bold text-[18px]">HiringKit</div>
+                <div className="font-bold text-[24px]">HiringKit</div>
               </div>
             </Link>
 
@@ -84,23 +83,6 @@ export default () => {
           </div>
         </>
       )}
-      <Modal props={{ visible: modalVisible, setVisible: setModalVisible }}>
-        <div className="max-w-[1124px] w-[80vw]">
-          {modalVisible && (
-            <video
-              autoPlay
-              loop
-              width="100%"
-              height="100%"
-              controls
-              preload="none"
-            >
-              <source src={"/videos/video_banner.mp4"} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-        </div>
-      </Modal>
     </div>
   );
 };

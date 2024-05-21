@@ -5,7 +5,7 @@ import Advantages from "@/sections/Advantages";
 import Challenging from "@/sections/Challenging";
 import WhyUse from "@/sections/WhyUse";
 import HowWork from "@/sections/HowWork";
-import Payment from "@/sections/Pricing";
+import Pricing from "@/sections/Pricing";
 // import Elevate from "@/sections/Elevate";
 import GoodBye from "@/sections/GoodBye";
 import Footer from "@/sections/Footer";
@@ -23,7 +23,7 @@ export default function Home() {
       <Testinominals />
       <HowWork />
       <Advantages />
-      <Payment />
+      {/* <Pricing /> */}
       <GoodBye />
       {/* <Footer /> */}
       <TopUpBtn />

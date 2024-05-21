@@ -8,14 +8,11 @@ export default ({
   setChecked: Function;
 }) => {
   return (
-    <div className="flex gap-4 text-[14px] text-black/80 justify-center pt-8">
+    <div className="flex gap-4 text-[14px] text-black/80 justify-center pt-4">
       <div>Pay Monthly</div>
       <label className="inline-flex items-center cursor-pointer ">
         <input
-          onClick={() => {
-            console.log("checked----->", checked);
-            setChecked(!checked);
-          }}
+          onClick={() => setChecked(!checked)}
           type="checkbox"
           checked={checked}
           className="sr-only peer"

@@ -12,7 +12,7 @@ export default (props: TestinominalProp) => {
   const { textProp, videoProp } = props;
   return (
     <div
-      className={`flex flex-col md:flex-row ustify-center items-center pt-16 gap-12 ${
+      className={`flex flex-col md:flex-row ustify-center items-center pt-16 px-2 gap-12 ${
         !videoProp.left && "md:flex-row-reverse"
       }`}
     >

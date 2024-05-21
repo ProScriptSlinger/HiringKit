@@ -15,7 +15,7 @@ const Faqs = () => {
         />
       </Link> */}
       <div className="text-[25px] pb-2 md:text-[30px] lg:text-[40px] font-title text-center">
-        FAQ's
+        {`FAQ's`}
       </div>
       {data.map((item, index) => (
         <CollapseItem

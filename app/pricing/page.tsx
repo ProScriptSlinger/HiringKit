@@ -1,9 +1,11 @@
 import Pricing from "@/sections/Pricing";
-import Breadcrumb from "@/components/Breadcrumb";
-export default () => {
+
+const Prices = () => {
   return (
     <div className="px-4 flex flex-col">
       <Pricing />
     </div>
   );
 };
+
+export default Prices;

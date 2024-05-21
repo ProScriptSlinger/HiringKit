@@ -40,8 +40,8 @@ export default (props: CardItemProp) => {
           <div className="flex flex-col gap-1">
             {services.map((item, index) => (
               <div
-                className="flex items-center gap-2 -ml-4 italic text-[18px]"
-                style={{ fontFamily: "Playfair Display" }}
+                className="flex items-center gap-2 -ml-4"
+                // style={{ fontFamily: "Playfair Display" }}
               >
                 <FaCheck color="#10AA81" size={16} />
                 <div>{item}</div>

@@ -74,10 +74,10 @@ export default () => {
             ))}
           </div>
           <div className="flex gap-4 items-center">
-            <div className="text-[#1C64F2] hover:text-[#28A0FA] font-semibold cursor-pointer ">
+            <div className="text-[#1E70E3] hover:text-[#28A0FA] font-semibold cursor-pointer ">
               Sign In
             </div>
-            <div className="hover:bg-[#28A0FA] rounded-full px-4 py-1 bg-[#1C64F2] text-white font-semibold cursor-pointer">
+            <div className="hover:bg-[#28A0FA] rounded-full px-4 py-1 bg-[#1E70E3] text-white font-semibold cursor-pointer">
               Sign Up
             </div>
           </div>

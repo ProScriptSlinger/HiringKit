@@ -14,7 +14,7 @@ interface UseItemProp {
 export default (props: UseItemProp) => {
   const { index, title, des } = props;
   return (
-    <div className="flex flex-col items-start gap-4">
+    <div className="flex flex-col items-center md:items-start gap-4">
       <div
         className="w-20 h-20  bg-[#2174EA] text-white hover:bg-gray-200 hover:text-[#2174EA] transition-all cursor-pointer flex justify-center items-center"
         style={{ borderRadius: "100%" }}
@@ -34,7 +34,9 @@ export default (props: UseItemProp) => {
         )}
       </div>
       <div className="font-bold text-[18px] md:text-[24px]">{title}</div>
-      <div className="text-[#64748B] max-w-[95vw]">{des}</div>
+      <div className="text-[#64748B] max-w-[95vw] text-center md:text-start">
+        {des}
+      </div>
     </div>
   );
 };

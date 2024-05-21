@@ -27,24 +27,12 @@ export default (props: { textProp: TextPartProp[] }) => {
           {/* <Comma /> */}
           <div className="flex items-center gap-2 px-2">
             <div
-              className="text-[#64748B] text-[20px] italic"
-              style={{ fontFamily: "Playfair Display" }}
+              className=" text-[20px]"
+              // style={{ fontFamily: "Playfair Display" }}
             >
               {item.word}
             </div>
           </div>
-          {/* <div className="flex gap-1 items-center pt-4">
-        <img
-          src={user.avatar}
-          alt={user.avatar}
-          width={32}
-          style={{ borderRadius: "100%" }}
-        />
-        <div className="text-[16px] font-medium">{user.name}</div>·
-        <div className="text-[16px]  font-medium text-[#64748B]">
-          {user.position}
-        </div>
-      </div> */}
         </div>
       ))}
     </div>

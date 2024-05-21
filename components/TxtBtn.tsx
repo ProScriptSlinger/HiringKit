@@ -25,7 +25,7 @@ const TxtBtn = (props: TxtBtnProp) => {
     >
       {label == "Faqs" ? (
         <Link href="/faqs">{label}</Link>
-      ) : label == "Prices" ? (
+      ) : label == "Pricing" ? (
         <Link href="/pricing">{label}</Link>
       ) : (
         label

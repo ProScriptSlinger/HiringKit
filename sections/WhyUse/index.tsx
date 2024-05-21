@@ -31,7 +31,7 @@ export default () => {
         delay={200}
         duration={0.7}
       >
-        <div className="grid grid-cols-12 gap-12 px-2 md:px-20 pt-[30px] w-[100vw] max-w-[1400px]">
+        <div className="grid grid-cols-12 gap-12 px-2 md:px-20 pt-[30px] w-full max-w-[1400px]">
           {data.map((item, index) => (
             <div className="col-span-12 md:col-span-6 lg:col-span-4 px-2">
               <WhyItem key={index} {...item} index={index} />

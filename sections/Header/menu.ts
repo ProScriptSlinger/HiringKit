@@ -16,7 +16,7 @@ const menu = [
         path: 'features',
     },
     {
-        label: 'Prices',
+        label: 'Pricing',
         path: 'prices',
     },
     {

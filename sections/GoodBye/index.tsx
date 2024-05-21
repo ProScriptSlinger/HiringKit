@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default () => {
   return (
-    <div className="bg-[#4B8FFB]  py-16 md:py-32 mt-[100px] ">
+    <div className="bg-[#1F70E4]  py-16 md:py-32 mt-[100px] ">
       <div className="flex flex-col gap-4 items-center">
         <div className="flex items-end  md:items-start">
           <div className=" text-[25px] md:text-[30px] lg:text-[40px] font-bold text-center text-white font-title">

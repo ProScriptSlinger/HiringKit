@@ -5,8 +5,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col gap-2 bg-[#FCFCFC]">
-      <Breadcrumb path="Prices" />
+    <div className="flex flex-col pt-8 gap-2 bg-[#FCFCFC]">
+      {/* <Breadcrumb path="Prices" /> */}
       {children}
     </div>
   );

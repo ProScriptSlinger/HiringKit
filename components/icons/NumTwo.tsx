@@ -1,7 +1,7 @@
 const NumTwo = () => {
   return (
     <div
-      className="flex justify-center items-center w-20 h-20 bg-[#4B8FFB]"
+      className="flex justify-center items-center w-20 h-20 bg-[#1F70E4]"
       style={{ borderRadius: "100%" }}
     >
       <svg fill="white" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">

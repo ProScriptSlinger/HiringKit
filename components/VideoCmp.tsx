@@ -26,7 +26,7 @@ const VideoCmp = (props: VideoProp) => {
           />
           <Image
             className="absolute top-0 left-0"
-            style={{ boxShadow: "0 20px 90px hsla(0, 0%, 72%, .8)" }}
+            style={{ boxShadow: "0 20px 90px hsla(0, 0%, 72%, .3)" }}
             src={imgSrc}
             width={540}
             height={405}
